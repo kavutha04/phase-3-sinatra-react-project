@@ -71,5 +71,12 @@ patch "/tasks/:id" do
   task.to_json
 end
 
+################## Category routes ####################
+
+  # GET requests
+  get "/categories" do
+    categories = Category.all
+    categories.to_json
+  end
 
 end
