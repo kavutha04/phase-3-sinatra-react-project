@@ -8,5 +8,10 @@ class ApplicationController < Sinatra::Base
     people = Person.all
     people.to_json
   end
+  
+  get "/people/:id" do
+    person = Person.find(params[:id])
+    person.to_json
+  end
 
 end
