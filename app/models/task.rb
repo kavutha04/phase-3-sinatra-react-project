@@ -7,7 +7,7 @@ class Task < ActiveRecord::Base
         Task.all.order(:name)
     end
 
-    #Sort tasks by date
+    #Sort tasks by date of creation
     def self.sort_by_date
         Task.all.order(:created_at)
     end
