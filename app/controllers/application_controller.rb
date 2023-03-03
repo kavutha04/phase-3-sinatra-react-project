@@ -36,5 +36,10 @@ get "/tasks" do
   tasks.to_json
 end
 
+get "/tasks/alpha" do
+  task = Task.sort_by_name
+  task.to_json
+end
+
 
 end
