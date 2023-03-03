@@ -30,4 +30,11 @@ class ApplicationController < Sinatra::Base
   end
 #####################################
 
+# GET requests
+get "/tasks" do
+  tasks = Task.all
+  tasks.to_json
+end
+
+
 end
