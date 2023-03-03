@@ -62,5 +62,14 @@ end
   task.to_json
 end
 
+# PATCH requests
+patch "/tasks/:id" do
+  task = Task.find(params[:id])
+  task.update(
+    person_id: params[:person_id]
+  )
+  task.to_json
+end
+
 
 end
