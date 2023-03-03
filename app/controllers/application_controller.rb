@@ -55,5 +55,12 @@ end
   task.to_json
 end
 
+ # DELETE requests
+ delete "/tasks/:id" do
+  task = Task.find(params[:id])
+  task.destroy
+  task.to_json
+end
+
 
 end
