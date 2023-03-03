@@ -45,4 +45,15 @@ get "/tasks/date" do
   task.to_json
 end
 
+ # POST requests
+ post "/tasks" do
+  task = Task.create(
+    name: params[:name],
+    category_id: params[:category],
+    person_id: params[:person]
+  )
+  task.to_json
+end
+
+
 end
