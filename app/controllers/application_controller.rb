@@ -8,10 +8,19 @@ class ApplicationController < Sinatra::Base
     people = Person.all
     people.to_json
   end
-  
+
   get "/people/:id" do
     person = Person.find(params[:id])
     person.to_json
   end
+
+  # POST requests
+  post "/people" do
+    person = Person.create(
+      name: params[:name]
+    )
+    person.to_json
+  end
+
 
 end
