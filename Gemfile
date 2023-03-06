@@ -37,8 +37,9 @@ gem "sqlite3"
 gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
-group :development do
+group :development, :production do
   gem "pry", "~> 0.14.1"
+  gem "faker"
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
