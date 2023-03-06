@@ -2,10 +2,10 @@
 
 This app is a simple "to do" tracker, where tasks can be created, assigned to people and categories.
 ### Frontend Link
-Repo `https://github.com/kavutha04/my-task-frontend`
+Repo url(" https://github.com/kavutha04/my-task-frontend ")
 
 ### Live Link
-Live URL `https://my-task-frontend.vercel.app/`
+Live URL(" https://my-task-frontend.vercel.app/ ")
 
 
 ## SetUp
